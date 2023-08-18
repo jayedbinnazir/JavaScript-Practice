@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE</title>
+    <style>
+        table {
+            width: 70%;
+            border: 2px solid black;
+            margin: auto;
+            height: 60vh;
+            border-collapse: collapse;
+        }
+
+        th,td {
+            border: 2px solid black;
+            text-align: center;
+
+        }
+
+      
+
+        tbody tr:nth-child(even) {
+            background-color: blueviolet;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: chartreuse;
+        }
+        thead tr th {
+           border: 2px solid black;
+           padding:1rem ;
+           background-color: blanchedalmond;
+           font-weight: bolder;
+           font-size: 1.5rem ;
+       }
+
+       tfoot tr td {
+           padding: 2rem;
+           font-size: 3rem;
+       }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: black;" id="col"/>
+            <col span="1" class="col"/>
+            <!-- <col class="col"/> -->
+        </colgroup>
+      
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th>Last Name</th>
+                <th> ShortName </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jayed</td>
+                <td>Bin Nazir</td>
+                <td>Jayed</td>
+            </tr>
+            <tr>
+                <td>Bilbo</td>
+                <td>Kenter</td>
+                <td>Bilbo</td>
+            </tr>
+            <tr>
+                <td>Jayed</td>
+                <td>Bin Nazir</td>
+                <td>Jayed</td>
+            </tr>
+            <tr>
+                <td>Bilbo</td>
+                <td>Kenter</td>
+                <td>Bilbo</td>
+            </tr>
+            <tr>
+                <td>Gandlaf</td>
+                <td>Moto</td>
+                <td>Gandlaf</td>
+            </tr>
+        </tbody>
+        <tfoot  >
+            <tr>
+                <td colspan="3" >Full Names  <div></div>  </td>
+               
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
